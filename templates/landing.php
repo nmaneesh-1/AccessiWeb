@@ -21,17 +21,19 @@
            <ion-icon class="site-logo" name="accessibility"></ion-icon>
            <p>AcessiWeb</p>
         </div>
-        <div class="nav-links"><ul>
+      <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">About</a></li>
         </ul>
-        </div>
+      
         <div class="auth-btn">
             <button class="btn-login">Login</button>
             <button class="btn-sign-up">Sign-up</button>
         </div>
+        <ion-icon class="menu-close-icon" name="close-outline"></ion-icon>
+        <ion-icon class="menu-open-icon" name="menu-outline"></ion-icon>
     </nav>
    </header> 
    <main>
@@ -151,5 +153,6 @@
             </div>
         </div>
    </footer>
+   <script src="assets/js/script.js"></script>
 </body>
 </html>
