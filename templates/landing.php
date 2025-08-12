@@ -39,12 +39,26 @@
    <main>
     <section class="hero-section">
         <h2 class="hero-primary-heading">Build Inclusive Web Experiences</h2>
-        <h4 class="secondary-heading">Analyze, Fix, and Ensure WCAG Compliance in Minutes</h4>
+        <h4 class="hero-secondary-heading">Analyze, Fix, and Ensure WCAG Compliance in Minutes</h4>
         <form class="form-wrapper" action="" method="POST">
             <input type="url" placeholder="Enter your site url">
             <button class="cta-btn">Analyze</button>
         </form>
         <button class="btn-demo"><ion-icon class="eye-icon" name="eye-outline"></ion-icon>Live Demo</button>
+          <div class="impact">
+     <div class="values">
+     <h2 class="value-percentage">20%</h2>
+    <p class="value-description">Increase your potential user base by making your site accessible.</p>
+  </div>
+  <div class="values">
+     <h2 class="value-percentage">90%</h2>
+    <p class="value-description">Reduction in legal risks associated with non-compliance.</p>
+  </div>
+   <div class="values">
+    <h2 class="value-percentage">15%</h2>
+    <p class="value-description">Improvement in SEO rankings due to better accessibility practices.</p>
+   </div>
+  </div>
     </section>
     <section class="features-section">
         <h3 class="features-primary-heading">Features</h3>

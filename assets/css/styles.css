@@ -28,7 +28,7 @@ nav {
   font-weight: 600;
   color: #000;
 }
-.nav-links.active {
+.nav-links {
   display: flex;
   align-items: center;
   column-gap: 30px;
@@ -72,8 +72,9 @@ a {
   font-weight: 800;
 }
 .hero-secondary-heading {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000b0;
 }
 .form-wrapper {
   max-width: 550px;
@@ -126,6 +127,24 @@ input::placeholder {
 .eye-icon {
   font-size: 22px;
   font-weight: 500;
+}
+/* impact */
+.impact {
+  display: flex;
+  margin-top: 40px;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.values {
+  border: 1px solid #0070e767;
+  border-radius: 8px;
+  padding: 18px;
+}
+.value-percentage {
+  color: #0e92ff;
+  font-size: 38px;
 }
 /* Features */
 .features-section {
