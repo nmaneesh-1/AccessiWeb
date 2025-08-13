@@ -5,7 +5,76 @@
   font-family: "Poppins", sans-serif;
 }
 /* Header-Nav */
+.auth-form-container {
+  padding: 0px 30px;
+}
+.sign-up {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  max-width: 450px;
+}
+.sign-up h3 {
+  color: #222;
+  font-family: poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+.sign-up h3 + p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+.signup-form form {
+  margin-top: 10px;
+}
 
+.signup-form input {
+  color: #344054;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+
+  height: 44px;
+}
+.sign-up input {
+  font-size: 16px;
+  padding: 10px 35px 10px 10px;
+}
+.password-input-container {
+  margin-bottom: 20px;
+}
+.btn-form-signup {
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+.btn-form-login a {
+  color: #044bb5;
+  font-weight: 500;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.btn-form-login {
+  margin-top: 25px;
+}
+.btn-form-login p {
+  color: #475467;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
 nav {
   display: flex;
   align-items: center;

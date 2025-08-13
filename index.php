@@ -1,4 +1,5 @@
  <?php
 // Include the Landing Page template
-require 'templates/landing.php';
+require 'templates/_landing.php';
+require 'includes/_login.php'
 ?>
