@@ -1,4 +1,8 @@
-<?php include '../includes/header.php'?>
+  <?php include '../includes/_head.php'?>
+<!-- 1 validate data using javascript are jquery 
+ 2 send http request to server 
+ 3 save the data to db using php 
+ 4 and redirect to dashboard -->
 <div class="auth-form-container">
     <div class="sign-up">
     <h3>Sign-up</h3>
@@ -22,4 +26,4 @@
 </div>
 </div>
 
-<?php include  '../includes/footer.php' ?>
+<?php include  '../includes/_footer.php' ?>

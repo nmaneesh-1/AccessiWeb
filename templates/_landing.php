@@ -1,25 +1,5 @@
-<?php include './includes/header.php'?>
-   <header>
-    <nav>
-        <div class="logo">
-           <ion-icon class="site-logo" name="accessibility"></ion-icon>
-           <p>AcessiWeb</p>
-        </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-        </ul>
-      
-        <div class="auth-btn">
-            <a class="btn-login" href="<?php echo $baseUrl; ?>/templates/_login.php">Login</a>
-    <a class="btn-sign-up" href="<?php echo $baseUrl; ?>/templates/_signup.php" >Sign-up</a>
-        </div>
-        <ion-icon class="menu-close-icon" name="close-outline"></ion-icon>
-        <ion-icon class="menu-open-icon" name="menu-outline"></ion-icon>
-    </nav>
-   </header> 
+<?php include './includes/_head.php'?>
+  <?php include './templates/_header.php'?>
    <main>
     <section class="hero-section">
         <h2 class="hero-primary-heading">Build Inclusive Web Experiences</h2>
@@ -44,7 +24,7 @@
    </div>
   </div>
     </section>
-    <section class="features-section">
+    <section class="features-section" id="feature-section">
         <h3 class="features-primary-heading">Features</h3>
         <h5 class="features-secondary-heading">Our tool provides comprehensive accessibility analysis to ensure your website is inclusive and compliant.</h5>
         <div class="feature-cards">
@@ -151,4 +131,4 @@
             </div>
         </div>
    </footer>
-<?php include './includes/footer.php'?>
+<?php include './includes/_footer.php'?>
