@@ -1,8 +1,8 @@
  
 <?php include '../includes/_head.php'?>
 <?php include '../includes/_sidebar.php'?>
-<main class="main-content">
+<main class="main-content" id="maincontent">
     <!-- Dashboard content -->
-     <h1>Hello Maneesh</h1>
+   
 </main>
 <?php include '../includes/_footer.php'?>
