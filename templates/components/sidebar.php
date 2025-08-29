@@ -1,6 +1,7 @@
  
-<?php include '../includes/_head.php'?>
-<?php include '../templates/_header.php'?>
+<?php include __DIR__ . '/meta_links.php'; ?>
+<?php include __DIR__ . '/header.php'; ?>
+
 <?php 
 $username="Maneesh";
 ?>
@@ -16,4 +17,4 @@ $username="Maneesh";
   <button class="logout-btn"><ion-icon class="logout-icon" name="arrow-back-outline"></ion-icon>Logout</button>
 </div>
 </aside>
-<?php include '../includes/_footer.php'?>
+
