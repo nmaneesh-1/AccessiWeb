@@ -1,45 +1,10 @@
  <?php
-// Change this if your project folder name changes
 $baseUrl = '/Accessiweb';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcessiWeb</title>
-    <!-- Icon -->
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<!-- font -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!-- css styles -->
- <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/styles.css">
-</head>
+
+<?php include './templates/components/meta_links.php' ?>
 <body> 
-<header>
-    <nav>
-        <div class="logo">
-           <ion-icon class="site-logo" name="accessibility"></ion-icon>
-           <p>AcessiWeb</p>
-        </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#feature-section">Features</a></li>
-        <li><a href="#">Help & support</a></li>
-        <li><a href="#">About</a></li>
-        </ul>
-      
-        <div class="auth-btn">
-            <a class="btn-login" href="<?php echo $baseUrl; ?>/templates/_login.php">Login</a>
-    <a class="btn-sign-up" href="<?php echo $baseUrl; ?>/templates/_signup.php" >Sign-up</a>
-        </div>
-        <ion-icon class="menu-close-icon" name="close-outline"></ion-icon>
-        <ion-icon class="menu-open-icon" name="menu-outline"></ion-icon>
-    </nav>
-   </header> 
+<?php include './templates/components/header.php' ?>
   
    <main>
     <section class="hero-section">
@@ -115,63 +80,7 @@ $baseUrl = '/Accessiweb';
     </section>
    
 </main>
-<footer>
-    <div class="footer-container">
-            <!-- Company Info -->
-            <div class="footer-section">
-                <h3 class="footer-title">Accessibility Analyzer</h3>
-                <p class="footer-description">Making the web inclusive for everyone through automated WCAG compliance testing.</p>
-               
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h4 class="footer-heading">Product</h4>
-                <ul class="footer-links">
-                    <li><a href="#features" class="footer-link">Features</a></li>
-                    <li><a href="#pricing" class="footer-link">About</a></li>
-                    <li><a href="#demo" class="footer-link">Live Demo</a></li>
-                    
-                </ul>
-            </div>
-
-            <!-- Legal Links -->
-            <div class="footer-section">
-                <h4 class="footer-heading">Legal</h4>
-                <ul class="footer-links">
-                    <li><a href="/terms" class="footer-link">Terms & Conditions</a></li>
-                    <li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
-                    <li><a href="/cookies" class="footer-link">Cookie Policy</a></li>
-                   
-                </ul>
-            </div>
-
-            <!-- Support & Contact -->
-            <div class="footer-section">
-                <h4 class="footer-heading">Support</h4>
-                <ul class="footer-links">
-                    <li><a href="/contact" class="footer-link">Contact Us</a></li>
-                   
-                    <li><a href="mailto:support@accessibilityanalyzer.com" class="footer-link">support@accessibilityanalyzer.com</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">
-                    &copy; 2024 Accessibility Analyzer. All rights reserved.
-                </p>
-                <div class="creator-info">
-                    <span>Created by</span>
-                    <a href="#" class="creator-link">Maneesh N</a>
-                    <span class="separator">|</span>
-                    <span>Made in India 🇮🇳</span>
-                </div>
-            </div>
-        </div>
-   </footer>
+<?php include './templates/components/footer.php'?>
 <script src="../assets/js/script.js"></script>
 </body>
 </html>
