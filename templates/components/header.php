@@ -12,8 +12,8 @@
         </ul>
       
         <div class="auth-btn">
-            <a class="btn-login" href="<?php echo $baseUrl; ?>/templates/_login.php">Login</a>
-    <a class="btn-sign-up" href="<?php echo $baseUrl; ?>/templates/_signup.php" >Sign-up</a>
+            <a class="btn-login" href="./templates/pages/login.php">Login</a>
+    <a class="btn-sign-up" href="./templates/pages/signup.php" >Sign-up</a>
         </div>
         <ion-icon class="menu-close-icon" name="close-outline"></ion-icon>
         <ion-icon class="menu-open-icon" name="menu-outline"></ion-icon>

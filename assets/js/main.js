@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailregex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
   const passwordinput = document.querySelector("#signup-password");
   const passregex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{8,}$/;
-  if (password && nameinput && emailinput && signupform) {
+  if (passwordinput && nameinput && emailinput && signupform) {
     signupform.addEventListener("submit", function (event) {
       event.preventDefault();
       const nameerr = document.querySelector(".name-error");
@@ -52,6 +52,41 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         console.log("Form has errors - please fix them");
         signupform.reportValidity(); // Show browser-native validation messages
+      }
+    });
+  }
+  // login validation
+  const loginform = document.querySelector("#loginForm");
+  if (loginform) {
+    loginform.addEventListener("submit", function (event) {
+      event.preventDefault();
+      // select the input
+      const loginEmail = document.querySelector("#login-email");
+      const loginPassword = document.querySelector("#login-password");
+      // email and password pattern
+      const loginEmailregex =
+        /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+      const loginPasswordregex =
+        /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{8,}$/;
+      //trim the values
+      const loginEmailvalue = loginEmail.value.trim();
+      const loginPasswordvalue = loginPassword.value.trim();
+      const emailerr = document.querySelector(".email-error");
+      const passworderr = document.querySelector(".password-error");
+      emailerr.innerHTML = "";
+      emailerr.style.visibility = "hidden";
+
+      passworderr.innerHTML = "";
+      passworderr.style.visibility = "hidden";
+
+      // email
+      if (!loginEmailregex.test(loginEmailvalue)) {
+        emailerr.innerHTML = "Please enter a valid email";
+        emailerr.style.visibility = "visible";
+      }
+      if (!loginPasswordregex.test(loginPasswordvalue)) {
+        passworderr.innerHTML = "Please enter a valid password";
+        passworderr.style.visibility = "visible";
       }
     });
   }

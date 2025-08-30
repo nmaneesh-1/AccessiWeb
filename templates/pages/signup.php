@@ -5,7 +5,7 @@
     <div class="signup-container">
   <h3>Sign-up</h3>
   <p>Sign up to create your store easily!</p>
-  <form action="" method="" id="signupForm" class="form">
+  <form action="_signup.php" method="post" id="signupForm" class="form">
     <label for="name">Name</label>
     <input type="text" id="signup-name" class="input" name="name" placeholder="Enter your name" required 
       minlength="3" maxlength="30">
